@@ -1,0 +1,110 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Fredoka:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Zeyada&display=swap');
+
+
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url(5.jpg);
+    background-size: 1000px;
+    background-position: centre centre;
+}
+.paper{
+    padding: 100px 100px;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(10.jpeg);
+    background-size:100px;
+    background-position: centre centre;
+    padding: 20px 100px;
+    transform: rotate(-5deg);
+    box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.heart{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #f20044;
+    animation: heart 0.6s linear infinite;
+
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);    
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);    
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);    
+    }
+}
+
+.paper.image{
+    padding: 10px;
+}
+
+.paper.image p{
+    font-size: 10px;
+}
+
+img{
+    max-height: 200px;
+    width: 100px;
+    user-select: none;
+}
+.heart::before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #f20044;
+}
+.heart::after {
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044;
+}
+.paper.drag{
+    padding-left:50px ;
+    padding-right: 50px;
+    font-size: x-large;
+    padding-top:100px;
+}
+.paper.bandw{
+    padding: 10px;
+    padding-top: 30px;
+}
+.paper.alok{
+    padding: 20px;
+}
+.paper.favorite{
+    padding: 20px;
+}
+.paper.dil{
+    padding: 20px;
+}
+p{
+    font-family: 'Sour Gummy';
+}
